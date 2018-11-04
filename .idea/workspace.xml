@@ -2,7 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="41f82989-7b8c-4d79-a1eb-d8bb516a3a0f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/pure_argon/read_data.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composite_gaussian/.ipynb_checkpoints/composite_gaussian-checkpoint.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/composite_gaussian/.ipynb_checkpoints/composite_gaussian-checkpoint.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composite_gaussian/composite_gaussian.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/composite_gaussian/composite_gaussian.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composite_gaussian/result.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/composite_gaussian/result.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composite_voigt/.ipynb_checkpoints/composite_voigt-checkpoint.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/composite_voigt/.ipynb_checkpoints/composite_voigt-checkpoint.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composite_voigt/composite_voigt.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/composite_voigt/composite_voigt.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composite_voigt/result.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/composite_voigt/result.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nist_gauss/.ipynb_checkpoints/gauss1-checkpoint.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/nist_gauss/.ipynb_checkpoints/gauss1-checkpoint.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nist_gauss/gauss1.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/nist_gauss/gauss1.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nist_gauss/result.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/nist_gauss/result.jpg" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -14,41 +24,49 @@
     <session id="-62298620">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="1" />
-          <entry key="project.open.time.2" value="1" />
-          <entry key="project.opened" value="1" />
+          <entry key="project.closed" value="6" />
+          <entry key="project.open.time.0" value="2" />
+          <entry key="project.open.time.1" value="1" />
+          <entry key="project.open.time.2" value="2" />
+          <entry key="project.open.time.3" value="1" />
+          <entry key="project.opened" value="6" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="py" value="1" />
+          <entry key="ipynb" value="1" />
+          <entry key="py" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="Python" value="1" />
+          <entry key="IPNB" value="1" />
+          <entry key="Python" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="py" value="160" />
+          <entry key="py" value="1425" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="Python" value="160" />
+          <entry key="Python" value="1425" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.vcs.git.usages" />
     </session>
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/pure_argon/read_data.py">
+        <entry file="file://$PROJECT_DIR$/ne_calculator/fitting.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="130">
-              <caret line="10" column="22" lean-forward="true" selection-start-line="10" selection-start-column="22" selection-end-line="10" selection-end-column="22" />
+            <state relative-caret-position="2756">
+              <caret line="212" column="26" lean-forward="true" selection-start-line="212" selection-start-column="26" selection-end-line="212" selection-end-column="26" />
+              <folding>
+                <element signature="e#146#164#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -69,6 +87,8 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/pure_argon/read_data.py" />
+        <option value="$PROJECT_DIR$/nist_gauss/gauss1.ipynb" />
+        <option value="$PROJECT_DIR$/ne_calculator/fitting.py" />
       </list>
     </option>
   </component>
@@ -81,6 +101,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -88,16 +109,10 @@
               <item name="SpectralFitting" type="b2602c69:ProjectViewProjectNode" />
               <item name="SpectralFitting" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="SpectralFitting" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SpectralFitting" type="462c0819:PsiDirectoryNode" />
-              <item name="pure_argon" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -145,11 +160,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="/anaconda3/bin/python3.6" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/pure_argon" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/ne_calculator" />
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/pure_argon/read_data.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/ne_calculator/fitting.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -176,13 +191,9 @@
     <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Favorites" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.11965812" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.12576313" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Version Control" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Python Console" />
-      <window_info anchor="bottom" id="Terminal" />
-      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.113265306" />
@@ -190,21 +201,42 @@
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="right" id="R Packages" />
-      <window_info anchor="right" id="R Graphics" />
+      <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Terminal" order="8" />
+      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
+      <window_info anchor="bottom" id="Python Console" order="10" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="R Graphics" order="3" />
+      <window_info anchor="right" id="R Packages" order="4" />
     </layout>
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/nist_gauss/gauss1.ipynb">
+      <provider selected="true" editor-type-id="ipnb-editor">
+        <state>
+          <selected id="7" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/pure_argon/read_data.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="130">
-          <caret line="10" column="22" lean-forward="true" selection-start-line="10" selection-start-column="22" selection-end-line="10" selection-end-column="22" />
+          <caret line="10" column="22" selection-start-line="10" selection-start-column="22" selection-end-line="10" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ne_calculator/fitting.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2756">
+          <caret line="212" column="26" lean-forward="true" selection-start-line="212" selection-start-column="26" selection-end-line="212" selection-end-column="26" />
+          <folding>
+            <element signature="e#146#164#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
