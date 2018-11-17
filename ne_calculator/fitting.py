@@ -18,14 +18,14 @@ from lmfit.models import LinearModel
 
 
 def input_calibrated_data():
-    # data1~data10までを読み込み、強度校正した結果を返す関数
+    # data1~data20までを読み込み、強度校正した結果を返す関数
     
     data = []
     # データ番号とリストのインデックスを対応させるためにりindex:0にからのリストを入れてある
     # 本当はNoneとか入れて例外処理すべき
     data.append([])
     col = range(0, 44)
-    for i in range(1, 11):
+    for i in range(1, 21):
         d = pd.read_csv('data{}.csv'.format(i), header=None)
         d = d.dropna(how="all")
         d = d.dropna(how="all", axis=1)
@@ -49,7 +49,7 @@ def max_index(data=None):
     # データ番号とリストのインデックスを対応させるためにindex:0には-1を入れてある
     # 本当は例外処理すべき
     max_idx.append(-1)
-    for i in range(1, 11):
+    for i in range(1, 21):
         idx = data[i].max()[data[i].max() == data[i].max().max()].index[0]
         max_idx.append(idx)
     return max_idx
@@ -66,7 +66,7 @@ def data_cut(data=None, indx_list=None):
     idx_cut.append([])
     df_cut = []
     df_cut.append([])
-    for i in range(1, 11):
+    for i in range(1, 21):
         d = data[i].loc[(data[i][0] >= 468.0) & (data[i][0] <= 495), indx_list[i]]
         idx = data[i].loc[(data[i][0] >= 468.0) & (data[i][0] <= 495), 0]
         data_cut_list.append(np.array(d))
@@ -192,21 +192,34 @@ if __name__ == '__main__':
     data = input_calibrated_data()
     
     max_idx = max_index(data)
+    d_cut = data_cut(data, max_idx)
 
+    gamma_list = []
+    for i in range(1, 21):
+        gamma = voigt_fit(d_cut, i, 0.15)
+        gamma_list.append(gamma)
+        print('data {} finished!'.format(i))
+
+    mu, ste = calculate_ne(gamma_list, 6.93*10**(-3))
+    print(mu)
+    print(ste)
+
+"""
     mu_list = []
     ste_list = []
     data_num_list = []
+    
     for k in range(-2, 11):
         data_num_list.append(k)
         
-        idx_list = np.array(max_idx) + k
-        idx_list = list(idx_list)
+        idx_list = list(np.array(max_idx) + k)
 
         d_cut = data_cut(data, idx_list)
 
         gamma_list = []
-        for i in range(1, 11):
+        for i in range(1, 21):
             gamma_list.append(voigt_fit(d_cut, i, 0.15))
+            print('data {} finished!'.format(i))
 
         mu, ste = calculate_ne(gamma_list, 6.93*10**(-3))
 
@@ -216,3 +229,4 @@ if __name__ == '__main__':
     plt.errorbar(data_num_list, mu_list, yerr=ste_list, fmt='ro', ecolor='g')
     plt.title('position - ne')
     plt.show()
+"""
